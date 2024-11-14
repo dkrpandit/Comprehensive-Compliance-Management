@@ -1,9 +1,9 @@
+import MainLayout from "./layouts/MainLayout"
 const App = () => {
   return (
     <>
-      <h1>Welcome Again baby</h1>
+     <MainLayout/>
     </>
   )
 }
-
 export default App
