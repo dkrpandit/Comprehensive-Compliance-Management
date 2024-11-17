@@ -148,7 +148,7 @@ const WardenDashboard = () => {
       {/* Dashboard Table */}
       <div className="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-6">
         <h1 className="text-2xl font-bold text-gray-800 mb-4">
-          Student Dashboard
+          Student List
         </h1>
 
         {/* Filter Buttons */}

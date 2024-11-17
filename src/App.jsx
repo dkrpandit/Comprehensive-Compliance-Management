@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layouts/MainLayout"
 // import Dashboard from "./pages/Dashboard"
 import Login from "./pages/Login"
-// import StudentDashboard from "./pages/student/StudentDashboard"
+import StudentDashboard from "./pages/student/StudentDashboard"
 import WardenDashboard from './pages/ warden/WardenDashboard';
 const App = () => {
   return (
@@ -12,8 +12,8 @@ const App = () => {
       <Routes>
         {/* Define routes */}
         <Route path="/" element={<Login />} />
-        <Route path="/warden/WardenDashboard" element={<WardenDashboard />} />
-        {/* <Route path="/teacher/teacher" element={<Teacher />} /> */}
+        <Route path="/warden/Dashboard" element={<WardenDashboard />} />
+        <Route path="/student/Dashboard" element={<StudentDashboard />} />
         {/* <Route path="/abcd/abcd" element={<ABCD />} /> */}
         <Route path="*" element={<div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
       <h1 className="text-3xl font-bold text-red-500">404 Page doesn't exist</h1>

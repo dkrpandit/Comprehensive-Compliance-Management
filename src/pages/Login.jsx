@@ -31,8 +31,8 @@ const Login = () => {
       console.log('Login submitted:', formData);
 
       // Simulate fetching roles from the database
-      setRoles(['Warden', 'Account Section','Teacher']); // Replace with API call
-      // setRoles(['Warden']); // Replace with API call
+      // setRoles(['Warden', 'Account Section','Teacher']); // Replace with API call
+      setRoles(['Student']); // Replace with API call
       setShowRoleModal(true);
     } catch (error) {
       console.error('Login error:', error);
@@ -40,20 +40,19 @@ const Login = () => {
       setIsLoading(false);
     }
   };
-
   const handleRoleSelection = (role) => {
     console.log(`Selected role: ${role}`);
     setShowRoleModal(false); // Close the modal
 
     switch (role) {
       case 'Warden':
-        navigate('/warden/WardenDashboard');
+        navigate('/warden/dashboard');
         break;
-      case 'Teacher':
-        navigate('/teacher/teacher.jsx');
+      case 'Student':
+        navigate('/student/dashboard');
         break;
       case 'ABCD':
-        navigate('/abcd/abcd.jsx');
+        navigate('/abcd/abcd');
         break;
       default:
         navigate('/'); // Redirect to login if role is invalid
